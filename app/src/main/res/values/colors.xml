@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0a28d1</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="loveColor">#ff4444</color>
+    <color name="joyColor">#ffffbb33</color>
+    <color name="surpriseColor">#ff99cc00</color>
+    <color name="angerColor">#ffcc0000</color>
+    <color name="sadnessColor">#ff0099cc</color>
+    <color name="fearColor">#ffaa66cc</color>
+</resources>

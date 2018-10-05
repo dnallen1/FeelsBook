@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/loveBtn"
+            android:layout_width="115dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/loveColor"
+            android:text="@string/loveEmot"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/joyBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <Button
+            android:id="@+id/joyBtn"
+            android:layout_width="115dp"
+            android:layout_height="54dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/joyEmot"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/surpriseBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/surpriseBtn"
+            android:layout_width="115dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="460dp"
+            android:background="@android:color/holo_green_light"
+            android:text="@string/surpriseEmot"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/angerBtn"
+            android:layout_width="115dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="@string/angerEmot"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/sadnessBtn"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/sadnessBtn"
+            android:layout_width="115dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/sadnessEmto"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/fearBtn"
+            app:layout_constraintEnd_toStartOf="@+id/fearBtn"
+            app:layout_constraintStart_toEndOf="@+id/angerBtn" />
+
+        <Button
+            android:id="@+id/fearBtn"
+            android:layout_width="115dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/holo_purple"
+            android:text="@string/fearEmon"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/surpriseBtn" />
+
+        <EditText
+            android:id="@+id/commentTextView"
+            android:layout_width="386dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="397dp"
+            android:hint="@string/commentText"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/scrollingList"
+        android:layout_width="match_parent"
+        android:layout_height="371dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</RelativeLayout>

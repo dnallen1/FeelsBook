@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FeelsBook</string>
+    <string name="fearEmon">Fear</string>
+    <string name="newfearCount">0</string>
+    <string name="commentText">Add Comment</string>
+    <string name="commentEnter">Enter</string>
+    <string name="historyBtn">History</string>
+    <string name="comment">Comment</string>
+    <string name="timeAdded">mm dd yyyy - hh:mm</string>
+    <string name="emotionAdded">Emotion</string>
+    <string name="loveEmot">Love</string>
+    <string name="joyEmot">Joy</string>
+    <string name="surpriseEmot">Surprise</string>
+    <string name="angerEmot">Anger</string>
+    <string name="sadnessEmto">Sadness</string>
+    <string name="cancelBtn">Cancel</string>
+    <string name="deleteBtn">Delete Comment</string>
+    <string name="editBtn">Edit Comment</string>
+    <string name="countList">Emotion Counts</string>
+    <string name="backToMain">Return to Emotions</string>
+    <string name="emotionPicked">Emotion Added</string>
+</resources>

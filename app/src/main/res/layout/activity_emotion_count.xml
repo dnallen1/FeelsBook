@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmotionCount">
+
+    <TextView
+        android:id="@+id/countListText"
+        android:layout_width="346dp"
+        android:layout_height="73dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/countList"
+        android:textColor="@android:color/black"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loveText"
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/loveEmot"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/loveCountText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/joyText"
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/joyEmot"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loveText" />
+
+    <TextView
+        android:id="@+id/loveCountText"
+        android:layout_width="149dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="170dp"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@android:color/holo_red_light" />
+
+    <TextView
+        android:id="@+id/surpriseText"
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_green_light"
+        android:text="@string/surpriseEmot"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joyText" />
+
+    <TextView
+        android:id="@+id/angerText"
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/angerEmot"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surpriseText" />
+
+    <TextView
+        android:id="@+id/sadnessText"
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/sadnessEmto"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/angerText" />
+
+    <TextView
+        android:id="@+id/fearText"
+        android:layout_width="380dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_purple"
+        android:text="@string/fearEmon"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sadnessText" />
+
+    <TextView
+        android:id="@+id/joyCountText"
+        android:layout_width="149dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loveText" />
+
+    <TextView
+        android:id="@+id/surpriseCountText"
+        android:layout_width="149dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joyText" />
+
+    <TextView
+        android:id="@+id/angerCountText"
+        android:layout_width="149dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surpriseText" />
+
+    <TextView
+        android:id="@+id/sadnessCountText"
+        android:layout_width="149dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/angerText" />
+
+    <TextView
+        android:id="@+id/fearCountText"
+        android:layout_width="149dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sadnessText" />
+
+    <Button
+        android:id="@+id/returnBtn"
+        android:layout_width="155dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/backToMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countListText" />
+
+</android.support.constraint.ConstraintLayout>

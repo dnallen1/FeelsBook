@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditCommentActivity">
+    <EditText
+        android:id="@+id/editComment"
+        android:layout_width="418dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="69dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTime"
+        android:layout_width="414dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editComment" />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="152dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="79dp"
+        android:text="@string/commentEnter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTime" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="152dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="79dp"
+        android:text="@string/cancelBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTime" />
+
+</android.support.constraint.ConstraintLayout>
