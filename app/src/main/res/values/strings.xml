@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FeelsBook</string>
+    <string name="app_name">dnallen-FeelsBook</string>
     <string name="fearEmon">Fear</string>
     <string name="newfearCount">0</string>
     <string name="commentText">Add Comment</string>
